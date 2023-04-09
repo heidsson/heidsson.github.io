@@ -1,17 +1,177 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World 2.0</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Bulma Website</title>
     <link rel="stylesheet" href="css/bulma.css">
   </head>
   <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Hello, Bulma!</h1>
-        <p class="subtitle">A simple, responsive CSS framework</p>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          My Website
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Home
+          </a>
+
+          <a class="navbar-item" href="#">
+            About
+          </a>
+
+          <a class="navbar-item" href="#">
+            Projects
+          </a>
+
+          <a class="navbar-item" href="#">
+            Blog
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="#">
+                <strong>Contact</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Welcome to My Website
+          </h1>
+          <h2 class="subtitle">
+            A simple, responsive CSS framework
+          </h2>
+        </div>
       </div>
     </section>
+
+    <!-- About -->
+    <section class="section">
+      <div class="container">
+        <h1 class="title">About Me</h1>
+        <h2 class="subtitle">Learn more about who I am and what I do.</h2>
+        <div class="columns">
+          <div class="column">
+            <p>I am a web developer with experience in HTML, CSS, and JavaScript.</p>
+            <p>I enjoy creating clean and responsive websites that are easy to use and visually appealing.</p>
+          </div>
+          <div class="column">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Portfolio</h1>
+        <h2 class="subtitle">Check out some of my recent projects.</h2>
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p>This is a project I worked on for a client. It's a simple website that showcases their products and services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p>This is a personal project I worked on to improve my coding skills. It's a simple game built with JavaScript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p>This is a project I worked on with a team of developers. It's a web application that helps users manage their tasks and projects.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Contact Me</h1>
+        <h2 class="subtitle">Send me a message and I'll get back to you as soon as possible.</h2>
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Your Name">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          © 2023 My Website
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
