@@ -3,70 +3,45 @@
   <head>
     <title>My Bulma Website</title>
     <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          My Website
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#">
-            Home
-          </a>
-
-          <a class="navbar-item" href="#">
-            About
-          </a>
-
-          <a class="navbar-item" href="#">
-            Projects
-          </a>
-
-          <a class="navbar-item" href="#">
-            Blog
-          </a>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary" href="#">
-                <strong>Contact</strong>
-              </a>
-            </div>
+    <!-- Hero -->
+    <div class="tile is-ancestor" style="height: 100vh; margin-bottom: 0;">
+      <div class=" has-background-black tile is-parent is-vertical">
+        <div class="tile is-child"></div>
+        <div class="tile is-child" style="padding-left: 10px;">
+          <div class="container has-text-left">
+            <h1 class="title" style="color: white;">I'm Hilmar</h1>
+            <h2 class="subtitle" style="color: white;">I'm passionate about technology, startup ventures, and leading teams</h2>
           </div>
         </div>
       </div>
-    </nav>
+      <div class="tile is-10 parallax" style="background-image: url('random-image-url')"></div>
+    </div>
+    <script>
+      const images = [
+        "assets/image1.png",
+        "assets/image2.png",
+        "assets/image3.png",
+        // add more image URLs here
+      ];
+    
+      const randomIndex = Math.floor(Math.random() * images.length);
+      const randomImageUrl = `url('${images[randomIndex]}')`;
 
-    <!-- Hero -->
-    <section class="hero is-primary is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            Welcome to My Website
-          </h1>
-          <h2 class="subtitle">
-            A simple, responsive CSS framework
-          </h2>
-        </div>
-      </div>
-    </section>
+      const column = document.querySelector(".tile.is-10");
+      column.style.backgroundImage = randomImageUrl;
+    </script>
+    
+    
+    
 
     <!-- About -->
-    <section class="section">
+    <section class="section background-gradient">
       <div class="container">
-        <h1 class="title">About Me</h1>
+        <h1 class="title">About Me2</h1>
         <h2 class="subtitle">Learn more about who I am and what I do.</h2>
         <div class="columns">
           <div class="column">
@@ -81,7 +56,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="section">
+    <section class="section has-background-black">
       <div class="container">
         <h1 class="title">Portfolio</h1>
         <h2 class="subtitle">Check out some of my recent projects.</h2>
@@ -131,6 +106,73 @@
         </div>
       </div>
     </section>
+
+    <!-- Great wave -->
+
+    <div class="tile is-ancestor background-gradient">
+      <div class="tile is-3 is-vertical is-parent">
+        <div class="tile is-child">
+          <p class="title">One</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        </div>
+      </div>
+      <div class="tile is-parent is-vertical">
+        <div class="tile is-horizontal">
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave1.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave2.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave3.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave4.png"alt="Placeholder Image">
+            </figure>
+          </div>
+        </div>
+        <div class="tile is-horizontal">
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave5.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave6.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave7.png"alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="tile is-child">
+            <figure class="image">
+              <div class="overlay"></div>
+              <img src="assets/wave8.png"alt="Placeholder Image">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     
     <!-- Contact -->
     <section class="section">
@@ -169,9 +211,9 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          © 2023 My Website
+          © 2021 My Website
         </p>
       </div>
     </footer>
   </body>
-</html>
+  </html>
