@@ -20,6 +20,7 @@
 
   h1 {
     font-family: 'SatoshiItalic', sans-serif;
+    color: white;
   }
   
   h2 {
@@ -28,10 +29,15 @@
 
   .title {
     font-size: 4vw;
-
+    color: white;
   }
   
   .subtitle {
     font-size: 2vw;
+  }
+
+  p {
+    font-family: 'Satoshi', sans-serif;
+    color: white;
   }
   
